@@ -146,4 +146,8 @@ $(window).ready(function() {
   animateTitle();
   animateHeader();
   onScroll();
+
+  $('#navbar').onePageNav({
+    currentClass: 'active'
+  });
 })

@@ -46,6 +46,15 @@ body {
 body.yellow .background {
   background-color: rgb(255, 233, 93);
 }
+body.yellow nav.navbar {
+  background: -webkit-linear-gradient(top, rgb(255, 233, 93) 10%, transparent);
+}
+body.yellow .nav>li>a:hover,
+body.yellow .nav>li>a:visited,
+body.yellow .nav-pills>li.active>a:hover,
+body.yellow .nav-pills>li.active>a {
+  border-bottom-color: #FFF;
+}
 body.white .background {
   background-color: #FFF;
 }
@@ -121,9 +130,9 @@ body.yellow .btn {
 }
 
 nav.navbar {
-  padding: 30px 40px;
+  padding: 15px 10px;
   border: none;
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 10%, transparent);
 }
 nav ul.nav {
   font: 1.2em/1 brandon;
