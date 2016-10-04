@@ -125,6 +125,11 @@ function animateHeader() {
 }
 function animateNav() {
   const delay = 2800;
+    const animateButtons = anime({
+      targets: 'nav.navbar',
+      opacity: [0,1],
+      delay: delay
+    })
   const item = $('nav.navbar li').each(function(i){
     anime({
       targets: this,
