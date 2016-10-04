@@ -123,6 +123,17 @@ function animateHeader() {
     delay: delay+200
   })
 }
+function animateNav() {
+  const delay = 2800;
+  const item = $('nav.navbar li').each(function(i){
+    anime({
+      targets: this,
+      opacity: [0,1],
+      translateY: [20,0],
+      delay: delay+i*50
+    })
+  })
+}
 function onScroll() {
   $(window).scroll(function(e) {
     const curr = $(document).scrollTop();
@@ -141,10 +152,11 @@ function onScroll() {
   })
 }
 $(window).ready(function() {
-  $('.jumbotron').removeClass('hidden');
+  $('.jumbotron, nav.navbar').removeClass('hidden');
   animateLogo();
   animateTitle();
   animateHeader();
+  animateNav();
   onScroll();
 
   $('#navbar').onePageNav({
