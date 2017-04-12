@@ -596,10 +596,11 @@ vertical-align: bottom;
 #schedule {
   padding: 50px;
   margin-bottom: 0px;
-  background: #F7FFF7;
+  color: #454f63;
+  background: #30ccb6;
 }
 #schedule .curve {
-  fill: #F7FFF7;
+  fill: #30ccb6;
 }
 #schedule h1 {
   font-size: 40px;
@@ -609,8 +610,16 @@ vertical-align: bottom;
   margin-top: 20px;
   margin-bottom: 100px;
 }
+#schedule table .schedule-row .detail {
+  padding-left: 60px;
+}
+
 #schedule table .schedule-row .time {
-  padding-right: 30px;
+  font-weight: 800;
+}
+
+#schedule table .schedule-row {
+  margin-bottom: 30px;
 }
 
 #contact {
