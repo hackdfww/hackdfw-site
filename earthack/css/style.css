@@ -593,6 +593,26 @@ vertical-align: bottom;
   display: block;
 }
 
+#schedule {
+  padding: 50px;
+  margin-bottom: 0px;
+  background: #F7FFF7;
+}
+#schedule .curve {
+  fill: #F7FFF7;
+}
+#schedule h1 {
+  font-size: 40px;
+}
+#schedule table {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+#schedule table .schedule-row .time {
+  padding-right: 30px;
+}
+
 #contact {
   padding: 50px;
   margin-bottom: 0px;
